@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Onyango | Web Developer & Cybersecurity Learner</title>
+    <meta name="description"
+        content="Portfolio of Kevin Onyango, a tech enthusiast and IT student at Kaimosi Friends University focusing on web development, cybersecurity, and ethical hacking.">
+    <meta name="keywords"
+        content="Kevin Onyango, web developer, cybersecurity, ethical hacking, Kaimosi Friends University, portfolio">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="theme--light">
+    <!-- Header & Navigation -->
+    <header class="header" id="top">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <span class="nav__logo-mark">KO</span>
+                <span class="nav__logo-text">Kevin Onyango</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active">Home</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+                    <li><a href="#services" class="nav__link">Services</a></li>
+                    <li><a href="#projects" class="nav__link">Projects</a></li>
+                    <li><a href="#education" class="nav__link">Education</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__controls">
+                <!-- Theme toggle button -->
+                <button class="theme-toggle" type="button" aria-label="Switch to light theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <!-- Mobile navigation toggle -->
+                <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false"
+                    aria-controls="nav-menu">
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero / Home Section -->
+        <section class="hero" id="home">
+            <div class="container hero__content">
+                <div class="hero__text fade-in-up">
+                    <p class="hero__intro">Hi, I’m</p>
+                    <h1 class="hero__title">Kevin Onyango</h1>
+                    <p class="hero__subtitle">
+                        Tech Enthusiast &bull; Web Developer &bull; Cybersecurity &amp; Ethical Hacking Learner
+                    </p>
+                    <p class="hero__description">
+                        I’m an IT undergraduate at <strong>Kaimosi Friends University</strong> who enjoys building
+                        modern web
+                        experiences and exploring how to secure systems through cybersecurity and ethical hacking.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="#projects" class="btn btn--primary">View Projects</a>
+                        <a href="#contact" class="btn btn--outline">Contact Me</a>
+                        <!-- Optional resume download -->
+                        <!-- <a href="assets/resume.pdf" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">Download Resume</a> -->
+                    </div>
+                </div>
+                <div class="hero__image-wrapper fade-in-up">
+                    <div class="hero__image-border">
+                        <img src="assets/img/profile.jpg" alt="Portrait of Kevin Onyango" class="hero__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section__title">About Me</h2>
+                <p class="section__subtitle">Who I am and what I care about</p>
+                <div class="about__grid">
+                    <p>
+                        I am <strong>Kevin Onyango</strong>, a passionate technology enthusiast and
+                        <strong>Information Technology</strong> student at <strong>Kaimosi Friends University</strong>.
+                        I specialize in creating interactive, user-friendly web experiences that bring ideas to life.
+                    </p>
+                    <p>
+                        My main focus is <strong>web development</strong>, <strong>cybersecurity</strong> and
+                        <strong>ethical hacking</strong>. I enjoy understanding how applications are built, how they can
+                        be
+                        attacked, and most importantly how they can be protected.
+                    </p>
+                    <p>
+                        I believe in <strong>continuous learning</strong> and <strong>ethical practice</strong>. Through
+                        projects, labs and real-world experience, I’m building a strong foundation for internships,
+                        freelancing, and long‑term growth in tech.
+                    </p>
+                </div>
+
+                <!-- Stats from portfolio site -->
+                <div class="about__stats">
+                    <div class="about__stat">
+                        <span class="about__stat-number">2+</span>
+                        <span class="about__stat-label">Years Experience</span>
+                    </div>
+                    <div class="about__stat">
+                        <span class="about__stat-number">10+</span>
+                        <span class="about__stat-label">Projects Completed</span>
+                    </div>
+                    <div class="about__stat">
+                        <span class="about__stat-number">5+</span>
+                        <span class="about__stat-label">Happy Clients</span>
+                    </div>
+                    <div class="about__stat">
+                        <span class="about__stat-number">6</span>
+                        <span class="about__stat-label">Services Offered</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section section--alt" id="skills">
+            <div class="container">
+                <h2 class="section__title">Skills</h2>
+                <p class="section__subtitle">What I work with and what I’m learning</p>
+
+                <div class="skills__grid">
+                    <!-- Web Development -->
+                    <div class="card skills__card">
+                        <h3 class="card__title">Web Development</h3>
+                        <ul class="skills__list">
+                            <li>HTML5, CSS3, JavaScript</li>
+                            <li>Responsive design (Flexbox &amp; CSS Grid)</li>
+                            <li>Clean, user‑focused UI/UX for web interfaces</li>
+                            <li>Version control with Git &amp; GitHub</li>
+                        </ul>
+                    </div>
+
+                    <!-- Cybersecurity & Ethical Hacking -->
+                    <div class="card skills__card">
+                        <h3 class="card__title">Cybersecurity &amp; Ethical Hacking (Learning)</h3>
+                        <ul class="skills__list">
+                            <li>Networking basics (OSI model, IP, ports)</li>
+                            <li>Linux fundamentals &amp; command line</li>
+                            <li>Web security concepts: XSS, SQL Injection (awareness level)</li>
+                            <li>Tools: Nmap, Burp Suite (lab environments)</li>
+                            <li>Security operations and basic SOC analysis</li>
+                            <li>Introductory penetration testing techniques</li>
+                        </ul>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="card skills__card">
+                        <h3 class="card__title">Soft Skills</h3>
+                        <ul class="skills__list">
+                            <li>Problem-solving and analytical thinking</li>
+                            <li>Team collaboration and communication</li>
+                            <li>Adaptability and willingness to learn</li>
+                            <li>Attention to detail and documentation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Design & Mobile (from Skills & Expertise) -->
+                    <div class="card skills__card">
+                        <h3 class="card__title">Design &amp; Mobile</h3>
+                        <ul class="skills__list">
+                            <li>UI/UX design for web and mobile products</li>
+                            <li>Graphic design for branding and marketing</li>
+                            <li>Front‑end web development with a design focus</li>
+                            <li>Cross‑platform and mobile app development concepts</li>
+                            <li>Android/iOS experience with modern tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section (from My Services) -->
+        <section class="section" id="services">
+            <div class="container">
+                <h2 class="section__title">My Services</h2>
+                <p class="section__subtitle">How I can help you create and secure digital products</p>
+
+                <div class="services__grid">
+                    <article class="card service">
+                        <h3 class="card__title">UI/UX Design</h3>
+                        <p class="service__description">
+                            Designing clear and intuitive interfaces for web and mobile, with a strong focus on user
+                            journeys,
+                            usability and clean visual hierarchy.
+                        </p>
+                    </article>
+
+                    <article class="card service">
+                        <h3 class="card__title">Graphic Design</h3>
+                        <p class="service__description">
+                            Creating logos, social media graphics and marketing assets that communicate your brand and
+                            look
+                            professional across different platforms.
+                        </p>
+                    </article>
+
+                    <article class="card service">
+                        <h3 class="card__title">Web Development</h3>
+                        <p class="service__description">
+                            Building responsive, modern websites and web apps using best practices, performance‑minded
+                            layouts
+                            and maintainable code.
+                        </p>
+                    </article>
+
+                    <article class="card service">
+                        <h3 class="card__title">App Development</h3>
+                        <p class="service__description">
+                            Working on native and cross‑platform app experiences, from interface design to basic
+                            functionality
+                            for Android and iOS.
+                        </p>
+                    </article>
+
+                    <article class="card service">
+                        <h3 class="card__title">Security Operations</h3>
+                        <p class="service__description">
+                            Practicing SOC‑style monitoring in lab environments, focusing on alert analysis, incident
+                            response
+                            workflows and threat visibility.
+                        </p>
+                    </article>
+
+                    <article class="card service">
+                        <h3 class="card__title">Penetration Testing</h3>
+                        <p class="service__description">
+                            Performing authorized security assessments in controlled labs to identify vulnerabilities
+                            and suggest
+                            improvements to harden systems.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <h2 class="section__title">Projects</h2>
+                <p class="section__subtitle">A selection of what I’ve been working on</p>
+
+                <div class="projects__grid">
+                    <!-- Original sample projects -->
+                    <article class="card project">
+                        <h3 class="card__title">Personal Portfolio Website</h3>
+                        <p class="project__description">
+                            A modern, responsive personal portfolio to showcase my skills, projects, and contact
+                            information
+                            as a tech enthusiast and IT student.
+                        </p>
+                        <p class="project__tech">
+                            <strong>Tech:</strong> HTML5, CSS3, JavaScript
+                        </p>
+                        <a href="https://github.com/your-username/portfolio" class="btn btn--ghost project__link"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </article>
+
+                    <article class="card project">
+                        <h3 class="card__title">Responsive Login Page</h3>
+                        <p class="project__description">
+                            A clean and secure login page template with responsive design and client‑side validation,
+                            suitable for modern web applications.
+                        </p>
+                        <p class="project__tech">
+                            <strong>Tech:</strong> HTML5, CSS3, JavaScript
+                        </p>
+                        <a href="https://github.com/your-username/responsive-login-page"
+                            class="btn btn--ghost project__link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </article>
+
+                    <article class="card project">
+                        <h3 class="card__title">Simple Blog Website</h3>
+                        <p class="project__description">
+                            A simple blog layout that focuses on readability and clean typography, with multiple posts
+                            and responsive design.
+                        </p>
+                        <p class="project__tech">
+                            <strong>Tech:</strong> HTML5, CSS3, JavaScript
+                        </p>
+                        <a href="https://github.com/your-username/simple-blog-website"
+                            class="btn btn--ghost project__link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </article>
+
+                    <article class="card project">
+                        <h3 class="card__title">Password Strength Checker</h3>
+                        <p class="project__description">
+                            A client-side tool that analyzes password strength in real time and gives visual feedback
+                            to help users create stronger passwords.
+                        </p>
+                        <p class="project__tech">
+                            <strong>Tech:</strong> HTML5, CSS3, JavaScript
+                        </p>
+                        <a href="https://github.com/your-username/password-strength-checker"
+                            class="btn btn--ghost project__link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </article>
+
+                    <!-- Projects from portfolio site (paraphrased) -->
+                    <article class="card project">
+                        <h3 class="card__title">“CyberSecure” – SOC Dashboard</h3>
+                        <p class="project__description">
+                            A Security Operations Center dashboard that visualizes alerts and activity in real time,
+                            helping analysts monitor threats and respond faster.
+                        </p>
+                        <p class="project__tech">
+                            <strong>Tech:</strong> React, Firebase, Node.js, Chart.js
+                        </p>
+                        <div class="project__actions">
+                            <a href="https://github.com/your-username/cybersecure-soc-dashboard"
+                                class="btn btn--ghost project__link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://your-live-demo-url.com" class="btn btn--outline project__link"
+                                target="_blank" rel="noopener noreferrer">
+                                Live Demo
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="card project">
+                        <h3 class="card__title">E‑commerce Platform</h3>
+                        <p class="project__description">
+                            A full‑stack online store with product listings, a shopping cart and payment integration,
+                            built to practice scalable web application design.
+                        </p>
+                        <p class="project__tech">
+                            <strong>Tech:</strong> Next.js, Stripe, MongoDB, Tailwind CSS
+                        </p>
+                        <div class="project__actions">
+                            <a href="https://github.com/your-username/ecommerce-platform"
+                                class="btn btn--ghost project__link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://your-live-demo-url.com" class="btn btn--outline project__link"
+                                target="_blank" rel="noopener noreferrer">
+                                Live Demo
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="card project">
+                        <h3 class="card__title">Creative Agency UI Kit</h3>
+                        <p class="project__description">
+                            A modern UI kit for creative agencies, designed in Figma with reusable components and
+                            layouts
+                            ready to be turned into real interfaces.
+                        </p>
+                        <p class="project__tech">
+                            <strong>Tech:</strong> Figma, UI Design, Prototyping
+                        </p>
+                        <a href="https://www.figma.com/" class="btn btn--outline project__link" target="_blank"
+                            rel="noopener noreferrer">
+                            View Design
+                        </a>
+                    </article>
+
+                    <article class="card project">
+                        <h3 class="card__title">TaskMaster Mobile App</h3>
+                        <p class="project__description">
+                            A cross‑platform productivity app that lets users manage tasks, set reminders and track
+                            progress from their phone.
+                        </p>
+                        <p class="project__tech">
+                            <strong>Tech:</strong> React Native, SQLite, Redux
+                        </p>
+                        <div class="project__actions">
+                            <a href="https://github.com/your-username/taskmaster-app"
+                                class="btn btn--ghost project__link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://your-app-store-link.com" class="btn btn--outline project__link"
+                                target="_blank" rel="noopener noreferrer">
+                                App Store
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section class="section section--alt" id="education">
+            <div class="container">
+                <h2 class="section__title">Experience &amp; Education</h2>
+                <p class="section__subtitle">Where I’ve learned and the roles I’ve held</p>
+
+                <div class="education__item card">
+                    <div class="experience__grid">
+                        <!-- Experience -->
+                        <div class="experience__column">
+                            <h3 class="card__title">Experience</h3>
+                            <ul class="timeline">
+                                <li class="timeline__item">
+                                    <span class="timeline__date">2024 &ndash; Present</span>
+                                    <h4 class="timeline__role">Freelancing</h4>
+                                    <p class="timeline__org">Independent</p>
+                                    <p class="timeline__desc">
+                                        Working on a variety of projects in web development, design and security‑related
+                                        tasks.
+                                    </p>
+                                </li>
+                                <li class="timeline__item">
+                                    <span class="timeline__date">May 2026 &ndash; July 2026</span>
+                                    <h4 class="timeline__role">IT Support (Attachment)</h4>
+                                    <p class="timeline__org">NSSF Kenya</p>
+                                    <p class="timeline__desc">
+                                        Assisted with day‑to‑day IT support, troubleshooting and user assistance in a
+                                        real‑world setting.
+                                    </p>
+                                </li>
+                                <li class="timeline__item">
+                                    <span class="timeline__date">May 2025 &ndash; July 2025</span>
+                                    <h4 class="timeline__role">Industrial Training</h4>
+                                    <p class="timeline__org">Kaimosi Friends University</p>
+                                    <p class="timeline__desc">
+                                        Practical training in IT, development and systems support to bridge theory and
+                                        practice.
+                                    </p>
+                                </li>
+                                <li class="timeline__item">
+                                    <span class="timeline__date">2024 &ndash; April 2025</span>
+                                    <h4 class="timeline__role">Social Media Manager &amp; Graphic Designer</h4>
+                                    <p class="timeline__org">Opti‑Plus Limited</p>
+                                    <p class="timeline__desc">
+                                        Managed social media presence and produced visual content and graphics for
+                                        campaigns.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="experience__column">
+                            <h3 class="card__title">Education</h3>
+                            <ul class="timeline">
+                                <li class="timeline__item">
+                                    <span class="timeline__date">2023 &ndash; 2027</span>
+                                    <h4 class="timeline__role">Bachelor’s Degree in Information Technology (IT)</h4>
+                                    <p class="timeline__org">Kaimosi Friends University</p>
+                                    <p class="timeline__desc">
+                                        Studying core computing concepts, networking, software development and
+                                        cybersecurity.
+                                    </p>
+                                </li>
+                                <li class="timeline__item">
+                                    <span class="timeline__date">2017 &ndash; 2021</span>
+                                    <h4 class="timeline__role">KCSE</h4>
+                                    <p class="timeline__org">Musanda Secondary School</p>
+                                </li>
+                                <li class="timeline__item">
+                                    <span class="timeline__date">2009 &ndash; 2016</span>
+                                    <h4 class="timeline__role">KCPE</h4>
+                                    <p class="timeline__org">Ingusi Primary School</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section__title">Contact</h2>
+                <p class="section__subtitle">
+                    I’m always open to new projects, ideas and opportunities. Let’s connect.
+                </p>
+
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <h3>Let’s talk</h3>
+                        <p>
+                            Whether you need a modern website, UI design or help on a security‑focused project, I’m
+                            happy to
+                            collaborate and learn together.
+                        </p>
+                        <p class="contact__email">
+                            <strong>Email:</strong>
+                            <a href="mailto:kevinonyango2047@gmail.com">kevinonyango2047@gmail.com</a>
+                        </p>
+                        <p class="contact__phone">
+                            <strong>Phone:</strong>
+                            <a href="tel:+254797369609">+254 797 369 609</a>
+                        </p>
+
+                        <div class="contact__socials">
+                            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer"
+                                class="contact__social-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"
+                                class="contact__social-link">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact__form" id="contact-form" novalidate>
+                        <div class="form__group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name">
+                            <small class="form__error" id="name-error"></small>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com">
+                            <small class="form__error" id="email-error"></small>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+                            <small class="form__error" id="message-error"></small>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary form__submit">
+                            Send Message
+                        </button>
+                        <p class="form__success" id="form-success"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__content">
+            <p>
+                &copy; <span id="year"></span> Kevin Onyango. All rights reserved.
+                <span class="footer__note">Made with passion for web development and cybersecurity.</span>
+            </p>
+            <div class="footer__socials">
+                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
