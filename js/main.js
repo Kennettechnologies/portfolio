@@ -90,9 +90,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Basic contact form validation
+  // Contact form validation and submission
   if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
+    const submitBtn = contactForm.querySelector(".form__submit");
+    
+    contactForm.addEventListener("submit", async (event) => {
       event.preventDefault();
 
       const nameInput = document.querySelector("#name");
@@ -107,7 +109,10 @@ document.addEventListener("DOMContentLoaded", () => {
       [nameError, emailError, messageError].forEach((el) => {
         if (el) el.textContent = "";
       });
-      if (formSuccess) formSuccess.textContent = "";
+      if (formSuccess) {
+        formSuccess.textContent = "";
+        formSuccess.classList.remove("form__success--error");
+      }
 
       let hasError = false;
 
@@ -143,12 +148,84 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (!hasError) {
-        if (formSuccess) {
-          formSuccess.textContent =
-            "Thank you for reaching out! I will get back to you soon.";
+        // Show loading state
+        if (submitBtn) {
+          submitBtn.classList.add("is-loading");
+          submitBtn.disabled = true;
         }
-        contactForm.reset();
+
+        try {
+          const formData = new FormData(contactForm);
+          const response = await fetch(contactForm.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+              "Accept": "application/json"
+            }
+          });
+
+          if (response.ok) {
+            if (formSuccess) {
+              formSuccess.textContent =
+                "Thank you for reaching out! I will get back to you soon.";
+            }
+            contactForm.reset();
+          } else {
+            throw new Error("Form submission failed");
+          }
+        } catch (error) {
+          if (formSuccess) {
+            formSuccess.textContent =
+              "Oops! Something went wrong. Please try again or email me directly.";
+            formSuccess.classList.add("form__success--error");
+          }
+        } finally {
+          // Remove loading state
+          if (submitBtn) {
+            submitBtn.classList.remove("is-loading");
+            submitBtn.disabled = false;
+          }
+        }
       }
     });
   }
+
+  // Intersection Observer for scroll animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Observe all cards and sections for animation
+  document.querySelectorAll(".card, .about__stat").forEach((el) => {
+    el.classList.add("animate-on-scroll");
+    observer.observe(el);
+  });
+
+  // Skill bars animation
+  const skillBars = document.querySelectorAll(".skill-bar__fill");
+  
+  const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const bar = entry.target;
+        const width = bar.getAttribute("data-width");
+        bar.style.width = width + "%";
+        skillObserver.unobserve(bar);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  skillBars.forEach((bar) => {
+    skillObserver.observe(bar);
+  });
 });

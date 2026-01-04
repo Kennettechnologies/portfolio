@@ -10,6 +10,28 @@
         content="Portfolio of Kevin Onyango, a tech enthusiast and IT student at Kaimosi Friends University focusing on web development, cybersecurity, and ethical hacking.">
     <meta name="keywords"
         content="Kevin Onyango, web developer, cybersecurity, ethical hacking, Kaimosi Friends University, portfolio">
+    <meta name="author" content="Kevin Onyango">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kevinonyango.dev/">
+    <meta property="og:title" content="Kevin Onyango | Web Developer & Cybersecurity Learner">
+    <meta property="og:description" content="Portfolio of Kevin Onyango, a tech enthusiast and IT student at Kaimosi Friends University focusing on web development, cybersecurity, and ethical hacking.">
+    <meta property="og:image" content="https://kevinonyango.dev/assets/img/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kevinonyango.dev/">
+    <meta property="twitter:title" content="Kevin Onyango | Web Developer & Cybersecurity Learner">
+    <meta property="twitter:description" content="Portfolio of Kevin Onyango, a tech enthusiast and IT student at Kaimosi Friends University focusing on web development, cybersecurity, and ethical hacking.">
+    <meta property="twitter:image" content="https://kevinonyango.dev/assets/img/og-image.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kevinonyango.dev/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,9 +46,20 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Analytics (replace GA_MEASUREMENT_ID with your actual ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
 </head>
 
 <body class="theme--light">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- Header & Navigation -->
     <header class="header" id="top">
         <nav class="nav container">
@@ -64,7 +97,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
         <!-- Hero / Home Section -->
         <section class="hero" id="home">
             <div class="container hero__content">
@@ -83,12 +116,12 @@
                         <a href="#projects" class="btn btn--primary">View Projects</a>
                         <a href="#contact" class="btn btn--outline">Contact Me</a>
                         <!-- Optional resume download -->
-                        <!-- <a href="assets/resume.pdf" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">Download Resume</a> -->
+                        <a href="assets/resume.pdf" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">Download Resume</a>
                     </div>
                 </div>
                 <div class="hero__image-wrapper fade-in-up">
                     <div class="hero__image-border">
-                        <img src="assets/img/profile.jpg" alt="Portrait of Kevin Onyango" class="hero__image">
+                        <img src="assets/img/profile.png" alt="Portrait of Kevin Onyango - Web Developer and Cybersecurity Enthusiast" class="hero__image" loading="eager" width="260" height="260">
                     </div>
                 </div>
             </div>
@@ -144,54 +177,184 @@
         <section class="section section--alt" id="skills">
             <div class="container">
                 <h2 class="section__title">Skills</h2>
-                <p class="section__subtitle">What I work with and what I’m learning</p>
+                <p class="section__subtitle">What I work with and what I'm learning</p>
 
-                <div class="skills__grid">
-                    <!-- Web Development -->
-                    <div class="card skills__card">
-                        <h3 class="card__title">Web Development</h3>
-                        <ul class="skills__list">
-                            <li>HTML5, CSS3, JavaScript</li>
-                            <li>Responsive design (Flexbox &amp; CSS Grid)</li>
-                            <li>Clean, user‑focused UI/UX for web interfaces</li>
-                            <li>Version control with Git &amp; GitHub</li>
-                        </ul>
+                <div class="skills__container">
+                    <!-- Technical Skills with Progress Bars -->
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">
+                            <i class="fas fa-code"></i> Web Development
+                        </h3>
+                        <div class="skills__bars">
+                            <div class="skill-bar">
+                                <div class="skill-bar__info">
+                                    <span class="skill-bar__name">HTML5</span>
+                                    <span class="skill-bar__percent">90%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__info">
+                                    <span class="skill-bar__name">CSS3 / Tailwind</span>
+                                    <span class="skill-bar__percent">85%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__info">
+                                    <span class="skill-bar__name">JavaScript</span>
+                                    <span class="skill-bar__percent">75%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__info">
+                                    <span class="skill-bar__name">React / Next.js</span>
+                                    <span class="skill-bar__percent">65%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill" data-width="65"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__info">
+                                    <span class="skill-bar__name">Git &amp; GitHub</span>
+                                    <span class="skill-bar__percent">80%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Cybersecurity & Ethical Hacking -->
-                    <div class="card skills__card">
-                        <h3 class="card__title">Cybersecurity &amp; Ethical Hacking (Learning)</h3>
-                        <ul class="skills__list">
-                            <li>Networking basics (OSI model, IP, ports)</li>
-                            <li>Linux fundamentals &amp; command line</li>
-                            <li>Web security concepts: XSS, SQL Injection (awareness level)</li>
-                            <li>Tools: Nmap, Burp Suite (lab environments)</li>
-                            <li>Security operations and basic SOC analysis</li>
-                            <li>Introductory penetration testing techniques</li>
-                        </ul>
+                    <!-- Cybersecurity Skills -->
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">
+                            <i class="fas fa-shield-halved"></i> Cybersecurity
+                        </h3>
+                        <div class="skills__bars">
+                            <div class="skill-bar">
+                                <div class="skill-bar__info">
+                                    <span class="skill-bar__name">Linux &amp; CLI</span>
+                                    <span class="skill-bar__percent">70%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill skill-bar__fill--security" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__info">
+                                    <span class="skill-bar__name">Networking (OSI, TCP/IP)</span>
+                                    <span class="skill-bar__percent">65%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill skill-bar__fill--security" data-width="65"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__info">
+                                    <span class="skill-bar__name">Web Security (XSS, SQLi)</span>
+                                    <span class="skill-bar__percent">55%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill skill-bar__fill--security" data-width="55"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__info">
+                                    <span class="skill-bar__name">Nmap &amp; Burp Suite</span>
+                                    <span class="skill-bar__percent">50%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill skill-bar__fill--security" data-width="50"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__info">
+                                    <span class="skill-bar__name">SOC &amp; Incident Response</span>
+                                    <span class="skill-bar__percent">45%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill skill-bar__fill--security" data-width="45"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
-                    <!-- Soft Skills -->
-                    <div class="card skills__card">
-                        <h3 class="card__title">Soft Skills</h3>
-                        <ul class="skills__list">
-                            <li>Problem-solving and analytical thinking</li>
-                            <li>Team collaboration and communication</li>
-                            <li>Adaptability and willingness to learn</li>
-                            <li>Attention to detail and documentation</li>
-                        </ul>
+                <!-- Tools & Technologies -->
+                <div class="skills__tools">
+                    <h3 class="skills__category-title skills__category-title--center">
+                        <i class="fas fa-toolbox"></i> Tools &amp; Technologies
+                    </h3>
+                    <div class="skills__tags">
+                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fab fa-react"></i> React</span>
+                        <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="skill-tag"><i class="fab fa-figma"></i> Figma</span>
+                        <span class="skill-tag"><i class="fab fa-linux"></i> Linux</span>
+                        <span class="skill-tag"><i class="fas fa-terminal"></i> Bash</span>
+                        <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> MongoDB</span>
+                        <span class="skill-tag"><i class="fas fa-bug"></i> Burp Suite</span>
+                        <span class="skill-tag"><i class="fas fa-network-wired"></i> Nmap</span>
+                        <span class="skill-tag"><i class="fas fa-user-secret"></i> OWASP</span>
                     </div>
+                </div>
 
-                    <!-- Design & Mobile (from Skills & Expertise) -->
-                    <div class="card skills__card">
-                        <h3 class="card__title">Design &amp; Mobile</h3>
-                        <ul class="skills__list">
-                            <li>UI/UX design for web and mobile products</li>
-                            <li>Graphic design for branding and marketing</li>
-                            <li>Front‑end web development with a design focus</li>
-                            <li>Cross‑platform and mobile app development concepts</li>
-                            <li>Android/iOS experience with modern tools</li>
-                        </ul>
+                <!-- Soft Skills -->
+                <div class="skills__soft">
+                    <h3 class="skills__category-title skills__category-title--center">
+                        <i class="fas fa-brain"></i> Soft Skills
+                    </h3>
+                    <div class="skills__soft-grid">
+                        <div class="soft-skill">
+                            <div class="soft-skill__icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <span class="soft-skill__name">Problem Solving</span>
+                        </div>
+                        <div class="soft-skill">
+                            <div class="soft-skill__icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <span class="soft-skill__name">Team Collaboration</span>
+                        </div>
+                        <div class="soft-skill">
+                            <div class="soft-skill__icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <span class="soft-skill__name">Communication</span>
+                        </div>
+                        <div class="soft-skill">
+                            <div class="soft-skill__icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <span class="soft-skill__name">Adaptability</span>
+                        </div>
+                        <div class="soft-skill">
+                            <div class="soft-skill__icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <span class="soft-skill__name">Attention to Detail</span>
+                        </div>
+                        <div class="soft-skill">
+                            <div class="soft-skill__icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <span class="soft-skill__name">Continuous Learning</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -520,38 +683,41 @@
                         </p>
 
                         <div class="contact__socials">
-                            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer"
+                            <a href="https://github.com/Kennettechnologies" target="_blank" rel="noopener noreferrer"
                                 class="contact__social-link">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
-                            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"
+                            <a href="https://www.linkedin.com/in/scriptsorcerer1" target="_blank" rel="noopener noreferrer"
                                 class="contact__social-link">
                                 <i class="fab fa-linkedin"></i> LinkedIn
                             </a>
                         </div>
                     </div>
 
-                    <form class="contact__form" id="contact-form" novalidate>
+                    <form class="contact__form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
                         <div class="form__group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name">
-                            <small class="form__error" id="name-error"></small>
+                            <input type="text" id="name" name="name" placeholder="Your name" required aria-required="true" aria-describedby="name-error" autocomplete="name">
+                            <small class="form__error" id="name-error" role="alert" aria-live="polite"></small>
                         </div>
 
                         <div class="form__group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="you@example.com">
-                            <small class="form__error" id="email-error"></small>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required aria-required="true" aria-describedby="email-error" autocomplete="email">
+                            <small class="form__error" id="email-error" role="alert" aria-live="polite"></small>
                         </div>
 
                         <div class="form__group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
-                            <small class="form__error" id="message-error"></small>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message" required aria-required="true" aria-describedby="message-error"></textarea>
+                            <small class="form__error" id="message-error" role="alert" aria-live="polite"></small>
                         </div>
 
-                        <button type="submit" class="btn btn--primary form__submit">
-                            Send Message
+                        <button type="submit" class="btn btn--primary form__submit" aria-label="Send your message">
+                            <span class="btn__text">Send Message</span>
+                            <span class="btn__loading" aria-hidden="true" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
                         </button>
                         <p class="form__success" id="form-success"></p>
                     </form>
@@ -561,18 +727,18 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container footer__content">
             <p>
                 &copy; <span id="year"></span> Kevin Onyango. All rights reserved.
                 <span class="footer__note">Made with passion for web development and cybersecurity.</span>
             </p>
             <div class="footer__socials">
-                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer"
+                <a href="https://github.com/Kennettechnologies" target="_blank" rel="noopener noreferrer"
                     aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.linkedin.com/in/scriptsorcerer1" target="_blank" rel="noopener noreferrer"
                     aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
@@ -582,6 +748,31 @@
 
     <!-- Main JS -->
     <script src="js/main.js"></script>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Kevin Onyango",
+        "url": "https://kevinonyango.dev",
+        "image": "https://kevinonyango.dev/assets/img/profile.png",
+        "sameAs": [
+            "https://github.com/Kennettechnologies",
+            "https://www.linkedin.com/in/scriptsorcerer1"
+        ],
+        "jobTitle": "Web Developer & Cybersecurity Learner",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        },
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Kaimosi Friends University"
+        },
+        "knowsAbout": ["Web Development", "Cybersecurity", "Ethical Hacking", "UI/UX Design"]
+    }
+    </script>
 </body>
 
 </html>
