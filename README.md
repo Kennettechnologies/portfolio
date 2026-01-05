@@ -2,11 +2,10 @@
 
 A modern, responsive personal portfolio website showcasing my skills, projects, and services as a Web Developer & Cybersecurity Enthusiast.
 
-![Portfolio Preview](assets/img/portfolio-preview.png)
 
 ## 🌐 Live Demo
 
-[View Live Site](https://kevinonyango.dev)
+[View Live Site](https://kennettechnologies.netlify.app/)
 
 ## ✨ Features
 
