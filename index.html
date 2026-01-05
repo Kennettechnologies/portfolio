@@ -231,6 +231,33 @@
                                     <div class="skill-bar__fill" data-width="80"></div>
                                 </div>
                             </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__info">
+                                    <span class="skill-bar__name">Python / Django</span>
+                                    <span class="skill-bar__percent">70%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__info">
+                                    <span class="skill-bar__name">PHP</span>
+                                    <span class="skill-bar__percent">55%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill" data-width="55"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__info">
+                                    <span class="skill-bar__name">Databases (MySQL, PostgreSQL, MongoDB)</span>
+                                    <span class="skill-bar__percent">65%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill" data-width="65"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -306,6 +333,10 @@
                         <span class="skill-tag"><i class="fab fa-linux"></i> Linux</span>
                         <span class="skill-tag"><i class="fas fa-terminal"></i> Bash</span>
                         <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-tag"><i class="fas fa-pepper-hot"></i> Django</span>
+                        <span class="skill-tag"><i class="fab fa-php"></i> PHP</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span>
                         <span class="skill-tag"><i class="fas fa-database"></i> MongoDB</span>
                         <span class="skill-tag"><i class="fas fa-bug"></i> Burp Suite</span>
                         <span class="skill-tag"><i class="fas fa-network-wired"></i> Nmap</span>
@@ -442,10 +473,16 @@
                         <p class="project__tech">
                             <strong>Tech:</strong> HTML5, CSS3, JavaScript
                         </p>
-                        <a href="https://github.com/your-username/portfolio" class="btn btn--ghost project__link"
-                            target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
+                        <div class="project__actions">
+                            <a href="https://github.com/your-username/portfolio" class="btn btn--ghost project__link"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://your-live-demo-url.com" class="btn btn--outline project__link"
+                                target="_blank" rel="noopener noreferrer">
+                                Live Demo
+                            </a>
+                        </div>
                     </article>
 
                     <article class="card project">
@@ -457,10 +494,16 @@
                         <p class="project__tech">
                             <strong>Tech:</strong> HTML5, CSS3, JavaScript
                         </p>
-                        <a href="https://github.com/your-username/responsive-login-page"
-                            class="btn btn--ghost project__link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
+                        <div class="project__actions">
+                            <a href="https://github.com/your-username/responsive-login-page"
+                                class="btn btn--ghost project__link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://your-live-demo-url.com" class="btn btn--outline project__link"
+                                target="_blank" rel="noopener noreferrer">
+                                Live Demo
+                            </a>
+                        </div>
                     </article>
 
                     <article class="card project">
@@ -472,10 +515,16 @@
                         <p class="project__tech">
                             <strong>Tech:</strong> HTML5, CSS3, JavaScript
                         </p>
-                        <a href="https://github.com/your-username/simple-blog-website"
-                            class="btn btn--ghost project__link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
+                        <div class="project__actions">
+                            <a href="https://github.com/your-username/simple-blog-website"
+                                class="btn btn--ghost project__link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://your-live-demo-url.com" class="btn btn--outline project__link"
+                                target="_blank" rel="noopener noreferrer">
+                                Live Demo
+                            </a>
+                        </div>
                     </article>
 
                     <article class="card project">
@@ -487,10 +536,16 @@
                         <p class="project__tech">
                             <strong>Tech:</strong> HTML5, CSS3, JavaScript
                         </p>
-                        <a href="https://github.com/your-username/password-strength-checker"
-                            class="btn btn--ghost project__link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
+                        <div class="project__actions">
+                            <a href="https://github.com/your-username/password-strength-checker"
+                                class="btn btn--ghost project__link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://your-live-demo-url.com" class="btn btn--outline project__link"
+                                target="_blank" rel="noopener noreferrer">
+                                Live Demo
+                            </a>
+                        </div>
                     </article>
 
                     <!-- Projects from portfolio site (paraphrased) -->
@@ -580,7 +635,7 @@
         <section class="section section--alt" id="education">
             <div class="container">
                 <h2 class="section__title">Experience &amp; Education</h2>
-                <p class="section__subtitle">Where I’ve learned and the roles I’ve held</p>
+                <p class="section__subtitle">Where I've learned and the roles I've held</p>
 
                 <div class="education__item card">
                     <div class="experience__grid">
@@ -588,15 +643,6 @@
                         <div class="experience__column">
                             <h3 class="card__title">Experience</h3>
                             <ul class="timeline">
-                                <li class="timeline__item">
-                                    <span class="timeline__date">2024 &ndash; Present</span>
-                                    <h4 class="timeline__role">Freelancing</h4>
-                                    <p class="timeline__org">Independent</p>
-                                    <p class="timeline__desc">
-                                        Working on a variety of projects in web development, design and security‑related
-                                        tasks.
-                                    </p>
-                                </li>
                                 <li class="timeline__item">
                                     <span class="timeline__date">May 2026 &ndash; July 2026</span>
                                     <h4 class="timeline__role">IT Support (Attachment)</h4>
@@ -624,31 +670,33 @@
                                         campaigns.
                                     </p>
                                 </li>
+                                <li class="timeline__item">
+                                    <span class="timeline__date">2024 &ndash; Present</span>
+                                    <h4 class="timeline__role">Freelancing</h4>
+                                    <p class="timeline__org">Independent</p>
+                                    <p class="timeline__desc">
+                                        Working on a variety of projects in web development, design and security‑related
+                                        tasks.
+                                    </p>
+                                </li>
                             </ul>
                         </div>
 
-                        <!-- Education -->
+                        <!-- Education & Certifications -->
                         <div class="experience__column">
-                            <h3 class="card__title">Education</h3>
+                            <h3 class="card__title">Education &amp; Certifications</h3>
                             <ul class="timeline">
                                 <li class="timeline__item">
-                                    <span class="timeline__date">2023 &ndash; 2027</span>
-                                    <h4 class="timeline__role">Bachelor’s Degree in Information Technology (IT)</h4>
+                                    <span class="timeline__date">2023 &ndash; 2027 (Expected)</span>
+                                    <h4 class="timeline__role">BSc. Information Technology</h4>
                                     <p class="timeline__org">Kaimosi Friends University</p>
+                                </li>
+                                <li class="timeline__item">
+                                    <span class="timeline__date">Coming Soon</span>
+                                    <h4 class="timeline__role">Certifications</h4>
                                     <p class="timeline__desc">
-                                        Studying core computing concepts, networking, software development and
-                                        cybersecurity.
+                                        Currently pursuing: CompTIA Security+, Google Cybersecurity Certificate
                                     </p>
-                                </li>
-                                <li class="timeline__item">
-                                    <span class="timeline__date">2017 &ndash; 2021</span>
-                                    <h4 class="timeline__role">KCSE</h4>
-                                    <p class="timeline__org">Musanda Secondary School</p>
-                                </li>
-                                <li class="timeline__item">
-                                    <span class="timeline__date">2009 &ndash; 2016</span>
-                                    <h4 class="timeline__role">KCPE</h4>
-                                    <p class="timeline__org">Ingusi Primary School</p>
                                 </li>
                             </ul>
                         </div>
@@ -683,6 +731,10 @@
                         </p>
 
                         <div class="contact__socials">
+                            <a href="https://wa.me/254797369609" target="_blank" rel="noopener noreferrer"
+                                class="contact__social-link contact__social-link--whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
                             <a href="https://github.com/Kennettechnologies" target="_blank" rel="noopener noreferrer"
                                 class="contact__social-link">
                                 <i class="fab fa-github"></i> GitHub

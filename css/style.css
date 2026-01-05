@@ -1187,6 +1187,31 @@ body.theme--light .contact__social-link:hover {
   background-color: #ffffff;
 }
 
+/* WhatsApp button styling */
+.contact__social-link--whatsapp {
+  background-color: #25D366;
+  border-color: #25D366;
+  color: #ffffff;
+}
+
+.contact__social-link--whatsapp:hover {
+  background-color: #128C7E;
+  border-color: #128C7E;
+  color: #ffffff;
+}
+
+body.theme--light .contact__social-link--whatsapp {
+  background-color: #25D366;
+  border-color: #25D366;
+  color: #ffffff;
+}
+
+body.theme--light .contact__social-link--whatsapp:hover {
+  background-color: #128C7E;
+  border-color: #128C7E;
+  color: #ffffff;
+}
+
 /* Footer text */
 body.theme--light .footer__content {
   color: #4b5563;
