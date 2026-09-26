@@ -16,7 +16,6 @@ A modern, responsive personal portfolio website showcasing my skills, projects, 
 - **SEO Optimized** - Open Graph meta tags, structured data, and semantic HTML
 - **Accessibility** - Skip links, ARIA labels, and keyboard navigation support
 - **Smooth Animations** - Subtle fade-in and scroll animations
-- **Lazy Loading** - Optimized image loading for better performance
 
 ## 🛠️ Tech Stack
 
@@ -66,19 +65,13 @@ portfolio/
 
 ### Configuration
 
-1. **Contact Form**: Replace `YOUR_FORM_ID` in `index.html` with your Formspree form ID
-   ```html
-   <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-   ```
+1. **Contact Form**: The form submits to Formspree. Update the form action in `index.html` if you use a different Formspree form.
 
-2. **Google Analytics**: Replace `GA_MEASUREMENT_ID` in `index.html` with your tracking ID
-   ```html
-   gtag('config', 'GA_MEASUREMENT_ID');
-   ```
+2. **Google Analytics**: Update the measurement ID in `index.html` if you use a different Analytics property.
 
-3. **Project Links**: Update placeholder URLs in the Projects section with your actual project links
+3. **Project Links**: Replace the placeholder URLs in the Projects section with your actual project links before publishing.
 
-4. **Profile Image**: Add your profile image to `assets/img/profile.png`
+4. **Social Preview**: Add `assets/img/og-image.png` before publishing so social cards have a dedicated preview image.
 
 ## 📱 Sections
 
@@ -110,7 +103,7 @@ Edit CSS custom properties in `css/style.css`:
 
 ### Theme Toggle
 
-The site supports dark (default) and light themes. Theme preference is saved to localStorage.
+The site defaults to light mode and supports dark mode. Theme preference is saved to localStorage.
 
 ## 📧 Contact
 
@@ -118,7 +111,7 @@ The site supports dark (default) and light themes. Theme preference is saved to 
 - **Phone**: [+254 797 369 609](tel:+254797369609)
 - **WhatsApp**: [Chat on WhatsApp](https://wa.me/254797369609)
 - **GitHub**: [@Kennettechnologies](https://github.com/Kennettechnologies)
-- **LinkedIn**: [scriptsorcerer1](https://www.linkedin.com/in/scriptsorcerer1)
+- **LinkedIn**: [Kennettechnologies](https://www.linkedin.com/in/kennettechnologies)
 
 ## 📄 License
 

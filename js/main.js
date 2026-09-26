@@ -211,21 +211,4 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 
-  // Skill bars animation
-  const skillBars = document.querySelectorAll(".skill-bar__fill");
-  
-  const skillObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const bar = entry.target;
-        const width = bar.getAttribute("data-width");
-        bar.style.width = width + "%";
-        skillObserver.unobserve(bar);
-      }
-    });
-  }, { threshold: 0.5 });
-
-  skillBars.forEach((bar) => {
-    skillObserver.observe(bar);
-  });
 });

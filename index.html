@@ -31,8 +31,7 @@
     <link rel="canonical" href="https://kennettechnologies.netlify.app/">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
-
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,24 +47,13 @@
     <link rel="stylesheet" href="css/style.css">
     
     <!-- Google Analytics (replace GA_MEASUREMENT_ID with your actual ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCK0MBLTNW"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'GA_MEASUREMENT_ID');
     </script>
-
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LCK0MBLTNW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LCK0MBLTNW');
-</script>
-    
 </head>
 
 <body class="theme--light">
@@ -75,7 +63,7 @@
     <header class="header" id="top">
         <nav class="nav container">
             <a href="#home" class="nav__logo">
-                <span class="nav__logo-mark">KO</span>
+                <img src="assets/img/favicon.ico" alt="" class="nav__logo-mark" width="36" height="36">
                 <span class="nav__logo-text">Kevin Onyango</span>
             </a>
 
@@ -85,7 +73,7 @@
                     <li><a href="#about" class="nav__link">About</a></li>
                     <li><a href="#skills" class="nav__link">Skills</a></li>
                     <li><a href="#services" class="nav__link">Services</a></li>
-                    <li><a href="#projects" class="nav__link">Projects</a></li>
+                    <!-- Projects navigation is disabled while the section is hidden. -->
                     <li><a href="#education" class="nav__link">Education</a></li>
                     <li><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
@@ -132,7 +120,7 @@
                 </div>
                 <div class="hero__image-wrapper fade-in-up">
                     <div class="hero__image-border">
-                        <img src="assets/img/profile.png" alt="Portrait of Kevin Onyango - Web Developer and Cybersecurity Enthusiast" class="hero__image" loading="eager" width="260" height="260">
+                        <img src="assets/img/apple-touch-icon.png" alt="Portrait of Kevin Onyango - Web Developer and Cybersecurity Enthusiast" class="hero__image" loading="eager" width="260" height="260">
                     </div>
                 </div>
             </div>
@@ -163,7 +151,7 @@
                 </div>
 
                 <!-- Stats from portfolio site -->
-                <div class="about__stats">
+                <!-- <div class="about__stats">
                     <div class="about__stat">
                         <span class="about__stat-number">2+</span>
                         <span class="about__stat-label">Years Experience</span>
@@ -180,7 +168,7 @@
                         <span class="about__stat-number">6</span>
                         <span class="about__stat-label">Services Offered</span>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -188,215 +176,63 @@
         <section class="section section--alt" id="skills">
             <div class="container">
                 <h2 class="section__title">Skills</h2>
-                <p class="section__subtitle">What I work with and what I'm learning</p>
+                <p class="section__subtitle">Languages, frameworks, tools, and technical disciplines.</p>
 
                 <div class="skills__container">
-                    <!-- Technical Skills with Progress Bars -->
                     <div class="skills__category">
-                        <h3 class="skills__category-title">
-                            <i class="fas fa-code"></i> Web Development
-                        </h3>
-                        <div class="skills__bars">
-                            <div class="skill-bar">
-                                <div class="skill-bar__info">
-                                    <span class="skill-bar__name">HTML5</span>
-                                    <span class="skill-bar__percent">90%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill" data-width="90"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__info">
-                                    <span class="skill-bar__name">CSS3 / Tailwind</span>
-                                    <span class="skill-bar__percent">85%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill" data-width="85"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__info">
-                                    <span class="skill-bar__name">JavaScript</span>
-                                    <span class="skill-bar__percent">75%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill" data-width="75"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__info">
-                                    <span class="skill-bar__name">React / Next.js</span>
-                                    <span class="skill-bar__percent">65%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill" data-width="65"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__info">
-                                    <span class="skill-bar__name">Git &amp; GitHub</span>
-                                    <span class="skill-bar__percent">80%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill" data-width="80"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__info">
-                                    <span class="skill-bar__name">Python / Django</span>
-                                    <span class="skill-bar__percent">70%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill" data-width="70"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__info">
-                                    <span class="skill-bar__name">PHP</span>
-                                    <span class="skill-bar__percent">55%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill" data-width="55"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__info">
-                                    <span class="skill-bar__name">Databases (MySQL, PostgreSQL, MongoDB)</span>
-                                    <span class="skill-bar__percent">65%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill" data-width="65"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <h3 class="skills__category-title">Web Development</h3>
+                        <ul class="skills__list">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Tailwind CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Next.js</li>
+                        </ul>
                     </div>
 
-                    <!-- Cybersecurity Skills -->
                     <div class="skills__category">
-                        <h3 class="skills__category-title">
-                            <i class="fas fa-shield-halved"></i> Cybersecurity
-                        </h3>
-                        <div class="skills__bars">
-                            <div class="skill-bar">
-                                <div class="skill-bar__info">
-                                    <span class="skill-bar__name">Linux &amp; CLI</span>
-                                    <span class="skill-bar__percent">70%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill skill-bar__fill--security" data-width="70"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__info">
-                                    <span class="skill-bar__name">Networking (OSI, TCP/IP)</span>
-                                    <span class="skill-bar__percent">65%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill skill-bar__fill--security" data-width="65"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__info">
-                                    <span class="skill-bar__name">Web Security (XSS, SQLi)</span>
-                                    <span class="skill-bar__percent">55%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill skill-bar__fill--security" data-width="55"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__info">
-                                    <span class="skill-bar__name">Nmap &amp; Burp Suite</span>
-                                    <span class="skill-bar__percent">50%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill skill-bar__fill--security" data-width="50"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__info">
-                                    <span class="skill-bar__name">SOC &amp; Incident Response</span>
-                                    <span class="skill-bar__percent">45%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill skill-bar__fill--security" data-width="45"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <h3 class="skills__category-title">Backend &amp; Databases</h3>
+                        <ul class="skills__list">
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                        </ul>
                     </div>
-                </div>
 
-                <!-- Tools & Technologies -->
-                <div class="skills__tools">
-                    <h3 class="skills__category-title skills__category-title--center">
-                        <i class="fas fa-toolbox"></i> Tools &amp; Technologies
-                    </h3>
-                    <div class="skills__tags">
-                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
-                        <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
-                        <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
-                        <span class="skill-tag"><i class="fab fa-react"></i> React</span>
-                        <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
-                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
-                        <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
-                        <span class="skill-tag"><i class="fab fa-figma"></i> Figma</span>
-                        <span class="skill-tag"><i class="fab fa-linux"></i> Linux</span>
-                        <span class="skill-tag"><i class="fas fa-terminal"></i> Bash</span>
-                        <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
-                        <span class="skill-tag"><i class="fas fa-pepper-hot"></i> Django</span>
-                        <span class="skill-tag"><i class="fab fa-php"></i> PHP</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i> MongoDB</span>
-                        <span class="skill-tag"><i class="fas fa-bug"></i> Burp Suite</span>
-                        <span class="skill-tag"><i class="fas fa-network-wired"></i> Nmap</span>
-                        <span class="skill-tag"><i class="fas fa-user-secret"></i> OWASP</span>
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">Mobile Apps</h3>
+                        <ul class="skills__list">
+                            <li>React Native</li>
+                            <li>Dart/Flutter</li>
+                        </ul>
                     </div>
-                </div>
 
-                <!-- Soft Skills -->
-                <div class="skills__soft">
-                    <h3 class="skills__category-title skills__category-title--center">
-                        <i class="fas fa-brain"></i> Soft Skills
-                    </h3>
-                    <div class="skills__soft-grid">
-                        <div class="soft-skill">
-                            <div class="soft-skill__icon">
-                                <i class="fas fa-lightbulb"></i>
-                            </div>
-                            <span class="soft-skill__name">Problem Solving</span>
-                        </div>
-                        <div class="soft-skill">
-                            <div class="soft-skill__icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <span class="soft-skill__name">Team Collaboration</span>
-                        </div>
-                        <div class="soft-skill">
-                            <div class="soft-skill__icon">
-                                <i class="fas fa-comments"></i>
-                            </div>
-                            <span class="soft-skill__name">Communication</span>
-                        </div>
-                        <div class="soft-skill">
-                            <div class="soft-skill__icon">
-                                <i class="fas fa-sync-alt"></i>
-                            </div>
-                            <span class="soft-skill__name">Adaptability</span>
-                        </div>
-                        <div class="soft-skill">
-                            <div class="soft-skill__icon">
-                                <i class="fas fa-search"></i>
-                            </div>
-                            <span class="soft-skill__name">Attention to Detail</span>
-                        </div>
-                        <div class="soft-skill">
-                            <div class="soft-skill__icon">
-                                <i class="fas fa-book-open"></i>
-                            </div>
-                            <span class="soft-skill__name">Continuous Learning</span>
-                        </div>
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">Networking &amp; Security</h3>
+                        <ul class="skills__list">
+                            <li>Linux</li>
+                            <li>Bash / CLI</li>
+                            <li>OSI &amp; TCP/IP</li>
+                            <li>Web Security</li>
+                            
+                            <li>Nmap</li>
+                            <li>Burp Suite</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="skills__category skills__category--wide">
+                        <h3 class="skills__category-title">Tools &amp; Design</h3>
+                        <ul class="skills__list">
+                            <li>Git</li>
+                            <li>Git & GitHub</li>
+                            <li>Figma</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -466,7 +302,8 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Projects section is temporarily hidden; retain the markup below for future reuse. -->
+        <template id="projects-template">
         <section class="section" id="projects">
             <div class="container">
                 <h2 class="section__title">Projects</h2>
@@ -644,6 +481,7 @@
                 </div>
             </div>
         </section>
+        </template>
 
         <!-- Experience & Education Section -->
         <section class="section section--alt" id="education">
@@ -658,9 +496,9 @@
                             <h3 class="card__title">Experience</h3>
                             <ul class="timeline">
                                 <li class="timeline__item">
-                                    <span class="timeline__date">May 2026 &ndash; July 2026</span>
+                                    <span class="timeline__date">May 2026 &ndash; August 2026</span>
                                     <h4 class="timeline__role">IT Support (Attachment)</h4>
-                                    <p class="timeline__org">NSSF Kenya</p>
+                                    <h3 class="timeline__org">Butere County Hospital(Level IV)</h3>
                                     <p class="timeline__desc">
                                         Assisted with day‑to‑day IT support, troubleshooting and user assistance in a
                                         real‑world setting.
@@ -669,7 +507,7 @@
                                 <li class="timeline__item">
                                     <span class="timeline__date">May 2025 &ndash; July 2025</span>
                                     <h4 class="timeline__role">Industrial Training</h4>
-                                    <p class="timeline__org">Kaimosi Friends University</p>
+                                    <h3 class="timeline__org">Kaimosi Friends University</h3>
                                     <p class="timeline__desc">
                                         Practical training in IT, development and systems support to bridge theory and
                                         practice.
@@ -708,9 +546,9 @@
                                 <li class="timeline__item">
                                     <span class="timeline__date">Coming Soon</span>
                                     <h4 class="timeline__role">Certifications</h4>
-                                    <p class="timeline__desc">
+                                    <!-- <p class="timeline__desc">
                                         Currently pursuing: CompTIA Security+, Google Cybersecurity Certificate
-                                    </p>
+                                    </p> -->
                                 </li>
                             </ul>
                         </div>
@@ -760,7 +598,7 @@
                         </div>
                     </div>
 
-                    <form class="contact__form" id="contact-form" action="https://formspree.io/f/xqeeapky" method="POST" novalidate>
+                    <form class="contact__form" id="contact-form" action="https://formspree.io/f/xppwyobw" method="POST" novalidate>
                         <div class="form__group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" placeholder="Your name" required aria-required="true" aria-describedby="name-error" autocomplete="name">
@@ -822,7 +660,7 @@
         "@type": "Person",
         "name": "Kevin Onyango",
         "url": "https://kennettechnologies.netlify.app",
-        "image": "https://kennettechnologies.netlify.app/assets/img/profile.png",
+        "image": "https://kennettechnologies.netlify.app/assets/img/apple-touch-icon.png",
         "sameAs": [
             "https://github.com/Kennettechnologies",
             "https://www.linkedin.com/in/kennettechnologies"
